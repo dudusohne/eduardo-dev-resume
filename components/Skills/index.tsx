@@ -11,7 +11,7 @@ export function Skills({ dictionary }: { dictionary: Dictionary }) {
         eyebrow={skills.eyebrow}
         title={skills.title}
       />
-      <dl className="grid gap-6 md:grid-cols-3">
+      <dl className="grid gap-x-10 gap-y-8 md:grid-cols-2 lg:grid-cols-3">
         {skills.groups.map((group) => (
           <div key={group.title} className="border-t border-zinc-300 pt-5">
             <dt className="text-lg font-semibold tracking-[-0.03em]">{group.title}</dt>

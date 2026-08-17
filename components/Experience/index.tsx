@@ -24,6 +24,9 @@ export function Experience({ locale, dictionary }: ExperienceProps) {
               {item.period}
             </p>
             <div className="md:col-span-4">
+              <p className="text-accent text-xs font-semibold tracking-[0.16em] uppercase">
+                {item.focus}
+              </p>
               <h3 className="text-xl font-medium tracking-[-0.03em]">{item.role}</h3>
               <p className="text-muted mt-1">{item.company}</p>
             </div>

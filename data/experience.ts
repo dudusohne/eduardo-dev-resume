@@ -4,6 +4,7 @@ export type ExperienceItem = {
   company: string;
   role: string;
   period: string;
+  focus: string;
   description: string;
   highlights: string[];
 };
@@ -14,6 +15,7 @@ export const experience: Record<Locale, ExperienceItem[]> = {
       company: 'Super Ensino',
       role: 'Software Engineer',
       period: 'November 2022 — Present',
+      focus: 'Frontend architecture & shared systems',
       description:
         'Developing large-scale educational platforms serving more than 100,000 users.',
       highlights: [
@@ -28,6 +30,7 @@ export const experience: Record<Locale, ExperienceItem[]> = {
       company: 'Simbiose Ventures',
       role: 'Full Stack Software Engineer',
       period: 'November 2021 — October 2022',
+      focus: 'Full stack foundations',
       description:
         'Worked on FastCrud, a low-code platform that generates web applications from JSON configuration.',
       highlights: [
@@ -42,6 +45,7 @@ export const experience: Record<Locale, ExperienceItem[]> = {
       company: 'Super Ensino',
       role: 'Engenheiro de Software',
       period: 'Novembro de 2022 — Presente',
+      focus: 'Arquitetura frontend e sistemas compartilhados',
       description:
         'Desenvolvimento de plataformas educacionais em larga escala que atendem mais de 100 mil usuários.',
       highlights: [
@@ -56,6 +60,7 @@ export const experience: Record<Locale, ExperienceItem[]> = {
       company: 'Simbiose Ventures',
       role: 'Engenheiro de Software Full Stack',
       period: 'Novembro de 2021 — Outubro de 2022',
+      focus: 'Fundamentos full stack',
       description:
         'Atuação no FastCrud, uma plataforma low-code que gera aplicações web a partir de configuração JSON.',
       highlights: [

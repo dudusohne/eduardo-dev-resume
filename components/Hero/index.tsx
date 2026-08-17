@@ -19,13 +19,21 @@ export function Hero({ dictionary }: { dictionary: Dictionary }) {
           <p className="text-muted text-lg leading-relaxed">{hero.description}</p>
           <p className="mt-3 text-sm font-medium text-zinc-500">{hero.location}</p>
         </div>
-        <a
-          href="#contato"
-          className="group bg-ink text-paper inline-flex items-center gap-3 rounded-full px-5 py-3 text-sm font-semibold transition-transform hover:-translate-y-1"
-        >
-          {hero.cta}{' '}
-          <span className="transition-transform group-hover:translate-x-1">→</span>
-        </a>
+        <div className="flex flex-wrap items-center gap-3">
+          <a
+            href="#engineering"
+            className="group bg-ink text-paper inline-flex items-center gap-3 rounded-full px-5 py-3 text-sm font-semibold transition-transform hover:-translate-y-1"
+          >
+            {hero.workCta}{' '}
+            <span className="transition-transform group-hover:translate-x-1">→</span>
+          </a>
+          <a
+            href="#contato"
+            className="hover:border-ink inline-flex items-center rounded-full border border-zinc-300 px-5 py-3 text-sm font-semibold transition-colors"
+          >
+            {hero.contactCta}
+          </a>
+        </div>
       </div>
     </section>
   );

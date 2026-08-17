@@ -7,20 +7,20 @@ export function Header({ locale, dictionary }: HeaderProps) {
   const links = [
     { href: '#sobre', label: navigation.about },
     { href: '#experiencia', label: navigation.experience },
-    { href: '#projetos', label: navigation.projects },
+    { href: '#engineering', label: navigation.projects },
     { href: '#contato', label: navigation.contact },
   ];
 
   return (
     <header className="bg-paper/90 sticky top-0 z-10 border-b border-zinc-200/80 backdrop-blur">
       <nav
-        className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 md:px-8"
+        className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 max-[479px]:px-4 md:px-8"
         aria-label={navigation.label}
       >
         <a href="#inicio" className="text-lg font-bold tracking-[-0.06em]">
           eduardo<span className="text-accent">.</span>
         </a>
-        <div className="flex items-center gap-4 text-sm font-medium md:gap-7">
+        <div className="flex items-center gap-4 text-sm font-medium max-[479px]:gap-3 md:gap-7">
           {links.map((link) => (
             <a
               key={link.href}
@@ -33,7 +33,7 @@ export function Header({ locale, dictionary }: HeaderProps) {
             </a>
           ))}
           <div
-            className="flex items-center gap-1 border-l border-zinc-300 pl-4"
+            className="flex items-center gap-1 border-l border-zinc-300 pl-4 max-[479px]:pl-3"
             aria-label={navigation.language}
           >
             {(['en-US', 'pt-BR'] as const).map((language) => (

@@ -4,7 +4,9 @@ import { Experience } from '@/components/Experience';
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
+import { ImpactMetrics } from '@/components/ImpactMetrics';
 import { Projects } from '@/components/Projects';
+import { ProductionEngineering } from '@/components/ProductionEngineering';
 import { Skills } from '@/components/Skills';
 import { dictionaries, isLocale } from '@/lib/i18n';
 import { notFound } from 'next/navigation';
@@ -24,10 +26,12 @@ export default async function Home({ params }: HomeProps) {
     <main>
       <Header locale={locale} dictionary={dictionary} />
       <Hero dictionary={dictionary} />
-      <About dictionary={dictionary} />
-      <Experience locale={locale} dictionary={dictionary} />
+      <ImpactMetrics dictionary={dictionary} />
+      <ProductionEngineering dictionary={dictionary} />
       <Projects locale={locale} dictionary={dictionary} />
+      <Experience locale={locale} dictionary={dictionary} />
       <Skills dictionary={dictionary} />
+      <About dictionary={dictionary} />
       <Contact dictionary={dictionary} />
       <Footer dictionary={dictionary} />
     </main>
