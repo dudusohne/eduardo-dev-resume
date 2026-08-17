@@ -25,7 +25,9 @@ export function Header({ locale, dictionary }: HeaderProps) {
             <a
               key={link.href}
               href={link.href}
-              className="hover:text-accent transition-colors"
+              className={`hover:text-accent transition-colors ${
+                link.href === '#sobre' ? 'max-[479px]:hidden' : ''
+              }`}
             >
               {link.label}
             </a>
