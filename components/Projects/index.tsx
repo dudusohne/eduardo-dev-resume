@@ -1,4 +1,3 @@
-import { SectionHeading } from '@/components/SectionHeading';
 import { projects } from '@/data/projects';
 import type { Dictionary, Locale } from '@/lib/i18n';
 
@@ -11,15 +10,7 @@ export function Projects({ locale, dictionary }: ProjectsProps) {
   return (
     <section id="projetos" className="bg-ink text-paper">
       <div className="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-28">
-        <SectionHeading
-          number={copy.number}
-          eyebrow={copy.sharedEyebrow}
-          title={copy.sharedTitle}
-        />
-        <p className="max-w-2xl text-lg leading-relaxed text-zinc-400 md:text-xl">
-          {copy.sharedDescription}
-        </p>
-        <article className="mt-12 grid gap-8 border-t border-zinc-700 pt-7 md:grid-cols-12 md:gap-10 md:pt-10">
+        <article className="grid gap-8 border-t border-zinc-700 pt-7 md:grid-cols-12 md:gap-10 md:pt-10">
           <div className="md:col-span-7">
             <p className="text-accent text-xs font-semibold tracking-[0.2em] uppercase">
               {copy.sharedEyebrow}

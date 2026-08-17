@@ -5,6 +5,7 @@ import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
 import { ImpactMetrics } from '@/components/ImpactMetrics';
+import { IndependentProjects } from '@/components/IndependentProjects';
 import { Projects } from '@/components/Projects';
 import { ProductionEngineering } from '@/components/ProductionEngineering';
 import { Skills } from '@/components/Skills';
@@ -31,6 +32,7 @@ export default async function Home({ params }: HomeProps) {
       <Projects locale={locale} dictionary={dictionary} />
       <Experience locale={locale} dictionary={dictionary} />
       <Skills dictionary={dictionary} />
+      <IndependentProjects locale={locale} dictionary={dictionary} />
       <About dictionary={dictionary} />
       <Contact dictionary={dictionary} />
       <Footer dictionary={dictionary} />

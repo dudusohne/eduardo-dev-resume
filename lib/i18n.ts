@@ -36,14 +36,18 @@ export type Dictionary = {
     languages: string;
   };
   projects: {
-    number: string;
     sharedEyebrow: string;
-    sharedTitle: string;
-    sharedDescription: string;
     earlierEyebrow: string;
     earlierTitle: string;
     stackLabel: string;
     outcomesLabel: string;
+  };
+  independentProjects: SectionCopy & {
+    description: string;
+    focusLabel: string;
+    stackLabel: string;
+    demoLabel: string;
+    repositoryLabel: string;
   };
   experience: SectionCopy;
   skills: SectionCopy & { groups: Array<{ title: string; details: string }> };
@@ -172,7 +176,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       ],
     },
     about: {
-      number: '05',
+      number: '06',
       eyebrow: 'About me',
       title: 'Built to scale.',
       lead: 'I build scalable web applications with a focus on frontend architecture, shared component libraries, and reusable frontend infrastructure.',
@@ -184,15 +188,22 @@ export const dictionaries: Record<Locale, Dictionary> = {
       languages: 'Portuguese (native) · English (professional working proficiency)',
     },
     projects: {
-      number: '02',
       sharedEyebrow: 'Shared frontend infrastructure',
-      sharedTitle: 'Building the platform behind the products.',
-      sharedDescription:
-        'I helped build and evolve a shared Design System used across multiple production applications, improving consistency, reuse, and developer experience across the frontend ecosystem.',
       earlierEyebrow: 'Earlier engineering work',
       earlierTitle: 'Full-stack foundations with FastCrud.',
       stackLabel: 'Technologies used',
       outcomesLabel: 'Engineering outcomes',
+    },
+    independentProjects: {
+      number: '05',
+      eyebrow: 'Independent projects',
+      title: 'Technical work beyond the day job.',
+      description:
+        'Deployed projects used to explore interaction design, state modeling, persistence, and application architecture.',
+      focusLabel: 'Engineering focus',
+      stackLabel: 'Technology',
+      demoLabel: 'View live project',
+      repositoryLabel: 'View source code',
     },
     experience: { number: '03', eyebrow: 'Career', title: 'Experience.' },
     skills: {
@@ -224,7 +235,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       ],
     },
     contact: {
-      number: '06',
+      number: '07',
       eyebrow: 'Contact',
       title: 'Let’s build something together.',
       email: 'dudu.hit@gmail.com',
@@ -346,7 +357,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       ],
     },
     about: {
-      number: '05',
+      number: '06',
       eyebrow: 'Sobre mim',
       title: 'Construído para escalar.',
       lead: 'Desenvolvo aplicações web escaláveis com foco em arquitetura frontend, bibliotecas compartilhadas de componentes e infraestrutura frontend reutilizável.',
@@ -358,15 +369,22 @@ export const dictionaries: Record<Locale, Dictionary> = {
       languages: 'Português (nativo) · Inglês (proficiência profissional)',
     },
     projects: {
-      number: '02',
       sharedEyebrow: 'Infraestrutura frontend compartilhada',
-      sharedTitle: 'Construindo a plataforma por trás dos produtos.',
-      sharedDescription:
-        'Ajudei a construir e evoluir um Design System compartilhado usado em múltiplas aplicações em produção, aumentando consistência, reúso e experiência de desenvolvimento no ecossistema frontend.',
       earlierEyebrow: 'Trabalho de engenharia anterior',
       earlierTitle: 'Fundamentos full stack com o FastCrud.',
       stackLabel: 'Tecnologias usadas',
       outcomesLabel: 'Resultados de engenharia',
+    },
+    independentProjects: {
+      number: '05',
+      eyebrow: 'Projetos independentes',
+      title: 'Trabalho técnico além do dia a dia.',
+      description:
+        'Projetos publicados para explorar design de interação, modelagem de estado, persistência e arquitetura de aplicações.',
+      focusLabel: 'Foco de engenharia',
+      stackLabel: 'Tecnologia',
+      demoLabel: 'Ver projeto online',
+      repositoryLabel: 'Ver código-fonte',
     },
     experience: { number: '03', eyebrow: 'Trajetória', title: 'Experiência.' },
     skills: {
@@ -398,7 +416,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       ],
     },
     contact: {
-      number: '06',
+      number: '07',
       eyebrow: 'Contato',
       title: 'Vamos construir algo juntos.',
       email: 'dudu.hit@gmail.com',
