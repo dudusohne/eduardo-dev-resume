@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --color-ink: #18181b;
+  --color-paper: #f8f8f5;
+  --color-accent: #d94f2b;
+  --color-muted: #71717a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+::selection {
+  background: #d94f2b;
+  color: white;
+}
